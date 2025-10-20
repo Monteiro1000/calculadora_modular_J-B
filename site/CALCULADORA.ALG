@@ -20,25 +20,46 @@ escreval ("Digite a operação( +, -, *, /) ")
 leia(operador)
 
 se operador = "+" entao
+
    escreval("Resultado: ", n1 + n2)
 
 senao
 
      se operador = "-" entao
+     
         escreval ("Resultado: ", n1 - n2)
 
 senao
      
      se operador = "*" entao
+     
         escreval ("Resultado: ", n1 * n2)
 senao
      
         se operador = "/" entao
-        escreval ("Resultado: ", n1 / n2)
         
-     fimse
+           se n2 <> 0 entao
+           
+              escreval ("Resultado: ", n1 / n2)
+              
+           senao
+           
+              escreval ("ERRO: Divisor 0")
+              
+           fimse
+           
+        senao
+        
+           escreva ("Operador invalido")
+           
+        fimse
 
+    fimse
+    
+    fimse
+    
 fimse
 Fimalgoritmo
+
 
 
