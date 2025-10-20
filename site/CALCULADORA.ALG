@@ -27,11 +27,18 @@ senao
      se operador = "-" entao
         escreval ("Resultado: ", n1 - n2)
 
-     senao
-          se
-
+senao
+     
+     se operador = "*" entao
+        escreval ("Resultado: ", n1 * n2)
+senao
+     
+        se operador = "/" entao
+        escreval ("Resultado: ", n1 / n2)
+        
      fimse
 
 fimse
-
 Fimalgoritmo
+
+
